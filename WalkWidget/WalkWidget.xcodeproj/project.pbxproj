@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		085326072AF0BA1E00BCBFBA /* WalkWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085326062AF0BA1E00BCBFBA /* WalkWidgetApp.swift */; };
+		085326092AF0BA1E00BCBFBA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085326082AF0BA1E00BCBFBA /* ContentView.swift */; };
+		0853260B2AF0BA1F00BCBFBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0853260A2AF0BA1F00BCBFBA /* Assets.xcassets */; };
+		0853260E2AF0BA1F00BCBFBA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0853260D2AF0BA1F00BCBFBA /* Preview Assets.xcassets */; };
+		085326182AF0BA1F00BCBFBA /* WalkWidgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085326172AF0BA1F00BCBFBA /* WalkWidgetTests.swift */; };
+		085326222AF0BA1F00BCBFBA /* WalkWidgetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085326212AF0BA1F00BCBFBA /* WalkWidgetUITests.swift */; };
+		085326242AF0BA1F00BCBFBA /* WalkWidgetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085326232AF0BA1F00BCBFBA /* WalkWidgetUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		085326142AF0BA1F00BCBFBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 085325FB2AF0BA1E00BCBFBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 085326022AF0BA1E00BCBFBA;
+			remoteInfo = WalkWidget;
+		};
+		0853261E2AF0BA1F00BCBFBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 085325FB2AF0BA1E00BCBFBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 085326022AF0BA1E00BCBFBA;
+			remoteInfo = WalkWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		085326032AF0BA1E00BCBFBA /* WalkWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalkWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		085326062AF0BA1E00BCBFBA /* WalkWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkWidgetApp.swift; sourceTree = "<group>"; };
+		085326082AF0BA1E00BCBFBA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0853260A2AF0BA1F00BCBFBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0853260D2AF0BA1F00BCBFBA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		085326132AF0BA1F00BCBFBA /* WalkWidgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalkWidgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		085326172AF0BA1F00BCBFBA /* WalkWidgetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkWidgetTests.swift; sourceTree = "<group>"; };
+		0853261D2AF0BA1F00BCBFBA /* WalkWidgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalkWidgetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		085326212AF0BA1F00BCBFBA /* WalkWidgetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkWidgetUITests.swift; sourceTree = "<group>"; };
+		085326232AF0BA1F00BCBFBA /* WalkWidgetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkWidgetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		085326002AF0BA1E00BCBFBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		085326102AF0BA1F00BCBFBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0853261A2AF0BA1F00BCBFBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		085325FA2AF0BA1E00BCBFBA = {
+			isa = PBXGroup;
+			children = (
+				085326052AF0BA1E00BCBFBA /* WalkWidget */,
+				085326162AF0BA1F00BCBFBA /* WalkWidgetTests */,
+				085326202AF0BA1F00BCBFBA /* WalkWidgetUITests */,
+				085326042AF0BA1E00BCBFBA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		085326042AF0BA1E00BCBFBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				085326032AF0BA1E00BCBFBA /* WalkWidget.app */,
+				085326132AF0BA1F00BCBFBA /* WalkWidgetTests.xctest */,
+				0853261D2AF0BA1F00BCBFBA /* WalkWidgetUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		085326052AF0BA1E00BCBFBA /* WalkWidget */ = {
+			isa = PBXGroup;
+			children = (
+				085326062AF0BA1E00BCBFBA /* WalkWidgetApp.swift */,
+				085326082AF0BA1E00BCBFBA /* ContentView.swift */,
+				0853260A2AF0BA1F00BCBFBA /* Assets.xcassets */,
+				0853260C2AF0BA1F00BCBFBA /* Preview Content */,
+			);
+			path = WalkWidget;
+			sourceTree = "<group>";
+		};
+		0853260C2AF0BA1F00BCBFBA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0853260D2AF0BA1F00BCBFBA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		085326162AF0BA1F00BCBFBA /* WalkWidgetTests */ = {
+			isa = PBXGroup;
+			children = (
+				085326172AF0BA1F00BCBFBA /* WalkWidgetTests.swift */,
+			);
+			path = WalkWidgetTests;
+			sourceTree = "<group>";
+		};
+		085326202AF0BA1F00BCBFBA /* WalkWidgetUITests */ = {
+			isa = PBXGroup;
+			children = (
+				085326212AF0BA1F00BCBFBA /* WalkWidgetUITests.swift */,
+				085326232AF0BA1F00BCBFBA /* WalkWidgetUITestsLaunchTests.swift */,
+			);
+			path = WalkWidgetUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		085326022AF0BA1E00BCBFBA /* WalkWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 085326272AF0BA1F00BCBFBA /* Build configuration list for PBXNativeTarget "WalkWidget" */;
+			buildPhases = (
+				085325FF2AF0BA1E00BCBFBA /* Sources */,
+				085326002AF0BA1E00BCBFBA /* Frameworks */,
+				085326012AF0BA1E00BCBFBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WalkWidget;
+			productName = WalkWidget;
+			productReference = 085326032AF0BA1E00BCBFBA /* WalkWidget.app */;
+			productType = "com.apple.product-type.application";
+		};
+		085326122AF0BA1F00BCBFBA /* WalkWidgetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0853262A2AF0BA1F00BCBFBA /* Build configuration list for PBXNativeTarget "WalkWidgetTests" */;
+			buildPhases = (
+				0853260F2AF0BA1F00BCBFBA /* Sources */,
+				085326102AF0BA1F00BCBFBA /* Frameworks */,
+				085326112AF0BA1F00BCBFBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				085326152AF0BA1F00BCBFBA /* PBXTargetDependency */,
+			);
+			name = WalkWidgetTests;
+			productName = WalkWidgetTests;
+			productReference = 085326132AF0BA1F00BCBFBA /* WalkWidgetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0853261C2AF0BA1F00BCBFBA /* WalkWidgetUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0853262D2AF0BA1F00BCBFBA /* Build configuration list for PBXNativeTarget "WalkWidgetUITests" */;
+			buildPhases = (
+				085326192AF0BA1F00BCBFBA /* Sources */,
+				0853261A2AF0BA1F00BCBFBA /* Frameworks */,
+				0853261B2AF0BA1F00BCBFBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0853261F2AF0BA1F00BCBFBA /* PBXTargetDependency */,
+			);
+			name = WalkWidgetUITests;
+			productName = WalkWidgetUITests;
+			productReference = 0853261D2AF0BA1F00BCBFBA /* WalkWidgetUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		085325FB2AF0BA1E00BCBFBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					085326022AF0BA1E00BCBFBA = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					085326122AF0BA1F00BCBFBA = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 085326022AF0BA1E00BCBFBA;
+					};
+					0853261C2AF0BA1F00BCBFBA = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 085326022AF0BA1E00BCBFBA;
+					};
+				};
+			};
+			buildConfigurationList = 085325FE2AF0BA1E00BCBFBA /* Build configuration list for PBXProject "WalkWidget" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 085325FA2AF0BA1E00BCBFBA;
+			productRefGroup = 085326042AF0BA1E00BCBFBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				085326022AF0BA1E00BCBFBA /* WalkWidget */,
+				085326122AF0BA1F00BCBFBA /* WalkWidgetTests */,
+				0853261C2AF0BA1F00BCBFBA /* WalkWidgetUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		085326012AF0BA1E00BCBFBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0853260E2AF0BA1F00BCBFBA /* Preview Assets.xcassets in Resources */,
+				0853260B2AF0BA1F00BCBFBA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		085326112AF0BA1F00BCBFBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0853261B2AF0BA1F00BCBFBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		085325FF2AF0BA1E00BCBFBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				085326092AF0BA1E00BCBFBA /* ContentView.swift in Sources */,
+				085326072AF0BA1E00BCBFBA /* WalkWidgetApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0853260F2AF0BA1F00BCBFBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				085326182AF0BA1F00BCBFBA /* WalkWidgetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		085326192AF0BA1F00BCBFBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				085326222AF0BA1F00BCBFBA /* WalkWidgetUITests.swift in Sources */,
+				085326242AF0BA1F00BCBFBA /* WalkWidgetUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		085326152AF0BA1F00BCBFBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 085326022AF0BA1E00BCBFBA /* WalkWidget */;
+			targetProxy = 085326142AF0BA1F00BCBFBA /* PBXContainerItemProxy */;
+		};
+		0853261F2AF0BA1F00BCBFBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 085326022AF0BA1E00BCBFBA /* WalkWidget */;
+			targetProxy = 0853261E2AF0BA1F00BCBFBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		085326252AF0BA1F00BCBFBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		085326262AF0BA1F00BCBFBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		085326282AF0BA1F00BCBFBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WalkWidget/Preview Content\"";
+				DEVELOPMENT_TEAM = AX94CTZN8D;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.sanghyun.practice.WalkWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		085326292AF0BA1F00BCBFBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WalkWidget/Preview Content\"";
+				DEVELOPMENT_TEAM = AX94CTZN8D;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.sanghyun.practice.WalkWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		0853262B2AF0BA1F00BCBFBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AX94CTZN8D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.sanghyun.practice.WalkWidgetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WalkWidget.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WalkWidget";
+			};
+			name = Debug;
+		};
+		0853262C2AF0BA1F00BCBFBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AX94CTZN8D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.sanghyun.practice.WalkWidgetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WalkWidget.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WalkWidget";
+			};
+			name = Release;
+		};
+		0853262E2AF0BA1F00BCBFBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AX94CTZN8D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.sanghyun.practice.WalkWidgetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WalkWidget;
+			};
+			name = Debug;
+		};
+		0853262F2AF0BA1F00BCBFBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AX94CTZN8D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.sanghyun.practice.WalkWidgetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WalkWidget;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		085325FE2AF0BA1E00BCBFBA /* Build configuration list for PBXProject "WalkWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				085326252AF0BA1F00BCBFBA /* Debug */,
+				085326262AF0BA1F00BCBFBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		085326272AF0BA1F00BCBFBA /* Build configuration list for PBXNativeTarget "WalkWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				085326282AF0BA1F00BCBFBA /* Debug */,
+				085326292AF0BA1F00BCBFBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0853262A2AF0BA1F00BCBFBA /* Build configuration list for PBXNativeTarget "WalkWidgetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0853262B2AF0BA1F00BCBFBA /* Debug */,
+				0853262C2AF0BA1F00BCBFBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0853262D2AF0BA1F00BCBFBA /* Build configuration list for PBXNativeTarget "WalkWidgetUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0853262E2AF0BA1F00BCBFBA /* Debug */,
+				0853262F2AF0BA1F00BCBFBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 085325FB2AF0BA1E00BCBFBA /* Project object */;
+}
