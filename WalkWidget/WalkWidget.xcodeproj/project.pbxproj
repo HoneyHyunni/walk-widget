@@ -15,6 +15,8 @@
 		085326222AF0BA1F00BCBFBA /* WalkWidgetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085326212AF0BA1F00BCBFBA /* WalkWidgetUITests.swift */; };
 		085326242AF0BA1F00BCBFBA /* WalkWidgetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085326232AF0BA1F00BCBFBA /* WalkWidgetUITestsLaunchTests.swift */; };
 		08CDCD972AFB225700C5B5FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDCD962AFB225700C5B5FF /* SceneDelegate.swift */; };
+		08CDCD9D2AFB3EE700C5B5FF /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDCD9C2AFB3EE700C5B5FF /* AppConstants.swift */; };
+		08CDCDA02AFB40F500C5B5FF /* UserDefaultsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDCD9F2AFB40F500C5B5FF /* UserDefaultsWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,9 @@
 		085326232AF0BA1F00BCBFBA /* WalkWidgetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkWidgetUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		08CDCD962AFB225700C5B5FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		08CDCD982AFB248600C5B5FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		08CDCD992AFB3CB000C5B5FF /* WalkWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WalkWidget.entitlements; sourceTree = "<group>"; };
+		08CDCD9C2AFB3EE700C5B5FF /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		08CDCD9F2AFB40F500C5B5FF /* UserDefaultsWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +102,14 @@
 		085326052AF0BA1E00BCBFBA /* WalkWidget */ = {
 			isa = PBXGroup;
 			children = (
-				08CDCD962AFB225700C5B5FF /* SceneDelegate.swift */,
 				085326062AF0BA1E00BCBFBA /* WalkWidgetApp.swift */,
+				08CDCD962AFB225700C5B5FF /* SceneDelegate.swift */,
 				085326082AF0BA1E00BCBFBA /* ContentView.swift */,
+				08CDCD9C2AFB3EE700C5B5FF /* AppConstants.swift */,
+				08CDCD9F2AFB40F500C5B5FF /* UserDefaultsWrapper.swift */,
 				0853260A2AF0BA1F00BCBFBA /* Assets.xcassets */,
 				08CDCD982AFB248600C5B5FF /* Info.plist */,
+				08CDCD992AFB3CB000C5B5FF /* WalkWidget.entitlements */,
 				0853260C2AF0BA1F00BCBFBA /* Preview Content */,
 			);
 			path = WalkWidget;
@@ -262,9 +270,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08CDCDA02AFB40F500C5B5FF /* UserDefaultsWrapper.swift in Sources */,
 				085326092AF0BA1E00BCBFBA /* ContentView.swift in Sources */,
 				085326072AF0BA1E00BCBFBA /* WalkWidgetApp.swift in Sources */,
 				08CDCD972AFB225700C5B5FF /* SceneDelegate.swift in Sources */,
+				08CDCD9D2AFB3EE700C5B5FF /* AppConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +435,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WalkWidget/WalkWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WalkWidget/Preview Content\"";
@@ -459,6 +470,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WalkWidget/WalkWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WalkWidget/Preview Content\"";

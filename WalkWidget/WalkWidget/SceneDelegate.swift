@@ -22,4 +22,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
     }
     
+    // MARK: Scene-based Lifecycle
+    func sceneDidBecomeActive(_ scene: UIScene) { }
 }
