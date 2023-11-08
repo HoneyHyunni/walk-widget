@@ -10,8 +10,6 @@ import SwiftUI
 @main
 struct AppWrapper {
     static func main() {
-        UIApplicationMain(
-            CommandLine.argc, CommandLine.unsafeArgv, nil, NSStringFromClass(SceneDelegate.self)
-        )
+        UIApplicationMain(CommandLine.argc, CommandLine.unsafeArgv, nil, NSStringFromClass(SceneDelegate.self))
     }
 }
