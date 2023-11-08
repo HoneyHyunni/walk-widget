@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct WalkWidgetApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+struct AppWrapper {
+    static func main() {
+        UIApplicationMain(
+            CommandLine.argc, CommandLine.unsafeArgv, nil, NSStringFromClass(SceneDelegate.self)
+        )
     }
 }

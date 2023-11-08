@@ -14,6 +14,7 @@
 		085326182AF0BA1F00BCBFBA /* WalkWidgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085326172AF0BA1F00BCBFBA /* WalkWidgetTests.swift */; };
 		085326222AF0BA1F00BCBFBA /* WalkWidgetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085326212AF0BA1F00BCBFBA /* WalkWidgetUITests.swift */; };
 		085326242AF0BA1F00BCBFBA /* WalkWidgetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085326232AF0BA1F00BCBFBA /* WalkWidgetUITestsLaunchTests.swift */; };
+		08CDCD972AFB225700C5B5FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDCD962AFB225700C5B5FF /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		0853261D2AF0BA1F00BCBFBA /* WalkWidgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalkWidgetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		085326212AF0BA1F00BCBFBA /* WalkWidgetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkWidgetUITests.swift; sourceTree = "<group>"; };
 		085326232AF0BA1F00BCBFBA /* WalkWidgetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkWidgetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		08CDCD962AFB225700C5B5FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		08CDCD982AFB248600C5B5FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +97,11 @@
 		085326052AF0BA1E00BCBFBA /* WalkWidget */ = {
 			isa = PBXGroup;
 			children = (
+				08CDCD962AFB225700C5B5FF /* SceneDelegate.swift */,
 				085326062AF0BA1E00BCBFBA /* WalkWidgetApp.swift */,
 				085326082AF0BA1E00BCBFBA /* ContentView.swift */,
 				0853260A2AF0BA1F00BCBFBA /* Assets.xcassets */,
+				08CDCD982AFB248600C5B5FF /* Info.plist */,
 				0853260C2AF0BA1F00BCBFBA /* Preview Content */,
 			);
 			path = WalkWidget;
@@ -259,6 +264,7 @@
 			files = (
 				085326092AF0BA1E00BCBFBA /* ContentView.swift in Sources */,
 				085326072AF0BA1E00BCBFBA /* WalkWidgetApp.swift in Sources */,
+				08CDCD972AFB225700C5B5FF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,8 +431,8 @@
 				DEVELOPMENT_TEAM = AX94CTZN8D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WalkWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Widget Test";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -459,8 +465,8 @@
 				DEVELOPMENT_TEAM = AX94CTZN8D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WalkWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Widget Test";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
