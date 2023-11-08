@@ -8,12 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isYellow = true
+    
     var body: some View {
-        VStack {
-            Text("Hello, world!")
-                .foregroundColor(.yellow)
+        ZStack {
+            self.setBackground()
+            VStack {
+                Toggle(isOn: $isYellow) {
+                    Text("Set Background Color")
+                        .foregroundColor(.black)
+                }
+            }
+            .padding()
         }
-        .padding()
+        .edgesIgnoringSafeArea(.all)
+    }
+    
+    private func setBackground() -> Color {
+        return self.isYellow ? Color("Background") : Color("BackgroundBlue")
     }
 }
 
