@@ -8,25 +8,24 @@
 import WidgetKit
 import SwiftUI
 
-struct Provider: TimelineProvider {
-    func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date())
+struct StepsProvider: TimelineProvider {
+    func placeholder(in context: Context) -> StepsEntry {
+        StepsEntry(date: Date())
     }
 
-    func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date())
+    func getSnapshot(in context: Context, completion: @escaping (StepsEntry) -> ()) {
+        let entry = StepsEntry(date: Date())
         completion(entry)
     }
 
-    func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        var entries: [SimpleEntry] = []
+    func getTimeline(in context: Context, completion: @escaping (Timeline<StepsEntry>) -> ()) {
+        var entries: [StepsEntry] = []
 
-        // Generate a timeline consisting of five entries an hour apart, starting from the current date.
         let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate)
-            entries.append(entry)
+        (0..<5).forEach { minuteOffset in
+            if let updateDate = Calendar.current.date(byAdding: .minute, value: minuteOffset, to: currentDate) {
+                entries.append(StepsEntry(date: updateDate))
+            }
         }
 
         let timeline = Timeline(entries: entries, policy: .atEnd)
@@ -34,48 +33,28 @@ struct Provider: TimelineProvider {
     }
 }
 
-struct SimpleEntry: TimelineEntry {
-    let date: Date
-    var backgroundColor: String {
-        return UserDefaultsWrapper.shared.getSharedUserDefaults().string(forKey: AppConstants.UD_KEY_BACKGROUND_COLOR) ?? "no value"
-    }
-}
-
-struct HealthWidgetEntryView : View {
-    var entry: Provider.Entry
-
-    var body: some View {
-        VStack {
-            Text("Time:")
-            Text(entry.date, style: .time)
-
-            Text("Background Color:")
-            Text(entry.backgroundColor)
-        }
-    }
-}
-
 struct HealthWidget: Widget {
-    let kind: String = "HealthWidget"
+    let kind = AppConstants.WIDGET_ID_STEPS
 
     var body: some WidgetConfiguration {
-        StaticConfiguration(kind: kind, provider: Provider()) { entry in
+        StaticConfiguration(kind: kind, provider: StepsProvider()) { entry in
             if #available(iOS 17.0, *) {
-                HealthWidgetEntryView(entry: entry)
+                StepsView(entry: entry)
                     .containerBackground(.fill.tertiary, for: .widget)
             } else {
-                HealthWidgetEntryView(entry: entry)
+                StepsView(entry: entry)
                     .padding()
                     .background()
             }
         }
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
+        .configurationDisplayName(AppConstants.WIDGET_NAME_STEPS)
+        .description(AppConstants.WIDGET_DESCRIPTION_STEPS)
+        .supportedFamilies([.systemSmall, .systemMedium])
     }
 }
 
 #Preview(as: .systemSmall) {
     HealthWidget()
 } timeline: {
-    SimpleEntry(date: .now)
+    StepsEntry(date: .now)
 }

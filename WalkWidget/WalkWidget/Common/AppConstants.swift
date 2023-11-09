@@ -11,4 +11,10 @@ class AppConstants {
     
     static let UD_KEY_BACKGROUND_COLOR = "BACKGROUND_COLOR"
     
+    // Widget
+    static let WIDGET_ID_STEPS = "STEPS_WIDGET"
+    
+    static let WIDGET_NAME_STEPS = "Steps Widget"
+    static let WIDGET_DESCRIPTION_STEPS = "Check how much you have walked."
+    
 }

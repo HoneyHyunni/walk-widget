@@ -25,6 +25,8 @@
 		08CDCDB52AFBB51500C5B5FF /* HealthWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 08CDCDA52AFBB51400C5B5FF /* HealthWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		08CDCDBB2AFBB5CE00C5B5FF /* UserDefaultsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDCD9F2AFB40F500C5B5FF /* UserDefaultsWrapper.swift */; };
 		08CDCDBC2AFBB5E300C5B5FF /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDCD9C2AFB3EE700C5B5FF /* AppConstants.swift */; };
+		08CDCDBF2AFCE15E00C5B5FF /* StepsEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDCDBE2AFCE15E00C5B5FF /* StepsEntry.swift */; };
+		08CDCDC22AFCE1A000C5B5FF /* StepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDCDC12AFCE1A000C5B5FF /* StepsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,8 @@
 		08CDCDB02AFBB51500C5B5FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08CDCDB22AFBB51500C5B5FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08CDCDBA2AFBB53400C5B5FF /* HealthWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HealthWidgetExtension.entitlements; sourceTree = "<group>"; };
+		08CDCDBE2AFCE15E00C5B5FF /* StepsEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsEntry.swift; sourceTree = "<group>"; };
+		08CDCDC12AFCE1A000C5B5FF /* StepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,12 +132,12 @@
 		085325FA2AF0BA1E00BCBFBA = {
 			isa = PBXGroup;
 			children = (
-				08CDCDBA2AFBB53400C5B5FF /* HealthWidgetExtension.entitlements */,
 				085326052AF0BA1E00BCBFBA /* WalkWidget */,
 				085326162AF0BA1F00BCBFBA /* WalkWidgetTests */,
 				085326202AF0BA1F00BCBFBA /* WalkWidgetUITests */,
 				08CDCDAB2AFBB51400C5B5FF /* HealthWidget */,
 				08CDCDA62AFBB51400C5B5FF /* Frameworks */,
+				08CDCDBA2AFBB53400C5B5FF /* HealthWidgetExtension.entitlements */,
 				085326042AF0BA1E00BCBFBA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -152,11 +156,11 @@
 		085326052AF0BA1E00BCBFBA /* WalkWidget */ = {
 			isa = PBXGroup;
 			children = (
+				08CDCDC42AFCE37900C5B5FF /* Wrappers */,
+				08CDCDC32AFCE36400C5B5FF /* Common */,
 				085326062AF0BA1E00BCBFBA /* WalkWidgetApp.swift */,
 				08CDCD962AFB225700C5B5FF /* SceneDelegate.swift */,
 				085326082AF0BA1E00BCBFBA /* ContentView.swift */,
-				08CDCD9C2AFB3EE700C5B5FF /* AppConstants.swift */,
-				08CDCD9F2AFB40F500C5B5FF /* UserDefaultsWrapper.swift */,
 				0853260A2AF0BA1F00BCBFBA /* Assets.xcassets */,
 				08CDCD982AFB248600C5B5FF /* Info.plist */,
 				08CDCD992AFB3CB000C5B5FF /* WalkWidget.entitlements */,
@@ -202,12 +206,46 @@
 		08CDCDAB2AFBB51400C5B5FF /* HealthWidget */ = {
 			isa = PBXGroup;
 			children = (
+				08CDCDC02AFCE18B00C5B5FF /* Views */,
+				08CDCDBD2AFCE13700C5B5FF /* Entries */,
 				08CDCDAC2AFBB51400C5B5FF /* HealthWidgetBundle.swift */,
 				08CDCDAE2AFBB51400C5B5FF /* HealthWidget.swift */,
 				08CDCDB02AFBB51500C5B5FF /* Assets.xcassets */,
 				08CDCDB22AFBB51500C5B5FF /* Info.plist */,
 			);
 			path = HealthWidget;
+			sourceTree = "<group>";
+		};
+		08CDCDBD2AFCE13700C5B5FF /* Entries */ = {
+			isa = PBXGroup;
+			children = (
+				08CDCDBE2AFCE15E00C5B5FF /* StepsEntry.swift */,
+			);
+			path = Entries;
+			sourceTree = "<group>";
+		};
+		08CDCDC02AFCE18B00C5B5FF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				08CDCDC12AFCE1A000C5B5FF /* StepsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		08CDCDC32AFCE36400C5B5FF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				08CDCD9C2AFB3EE700C5B5FF /* AppConstants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		08CDCDC42AFCE37900C5B5FF /* Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				08CDCD9F2AFB40F500C5B5FF /* UserDefaultsWrapper.swift */,
+			);
+			path = Wrappers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -402,7 +440,9 @@
 			files = (
 				08CDCDAD2AFBB51400C5B5FF /* HealthWidgetBundle.swift in Sources */,
 				08CDCDBB2AFBB5CE00C5B5FF /* UserDefaultsWrapper.swift in Sources */,
+				08CDCDC22AFCE1A000C5B5FF /* StepsView.swift in Sources */,
 				08CDCDAF2AFBB51400C5B5FF /* HealthWidget.swift in Sources */,
+				08CDCDBF2AFCE15E00C5B5FF /* StepsEntry.swift in Sources */,
 				08CDCDBC2AFBB5E300C5B5FF /* AppConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
