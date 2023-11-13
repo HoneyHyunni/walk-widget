@@ -10,7 +10,7 @@ import WidgetKit
 struct StepsEntry: TimelineEntry {
     let date: Date
     
-    var backgroundColor: String {
-        return UserDefaultsWrapper.shared.getSharedUserDefaults().string(forKey: AppConstants.UD_KEY_BACKGROUND_COLOR) ?? "no value"
+    var steps: Int {
+        return UserDefaultsWrapper.shared.getSharedUserDefaults().integer(forKey: AppConstants.UD_KEY_STEPS)
     }
 }

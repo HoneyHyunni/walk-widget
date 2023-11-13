@@ -12,7 +12,9 @@ struct StepsView: View {
     
     var body: some View {
         VStack {
-            Text("Background Color: \(entry.backgroundColor)")
+            Text("Steps")
+            Text(entry.steps.description)
+                .bold()
         }
     }
 }

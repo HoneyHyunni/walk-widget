@@ -22,7 +22,7 @@ struct StepsProvider: TimelineProvider {
         var entries: [StepsEntry] = []
 
         let currentDate = Date()
-        (0..<5).forEach { minuteOffset in
+        (0..<2).forEach { minuteOffset in
             if let updateDate = Calendar.current.date(byAdding: .minute, value: minuteOffset, to: currentDate) {
                 entries.append(StepsEntry(date: updateDate))
             }
@@ -33,9 +33,9 @@ struct StepsProvider: TimelineProvider {
     }
 }
 
-struct HealthWidget: Widget {
+struct StepsWidget: Widget {
     let kind = AppConstants.WIDGET_ID_STEPS
-
+    
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: StepsProvider()) { entry in
             if #available(iOS 17.0, *) {
@@ -54,7 +54,7 @@ struct HealthWidget: Widget {
 }
 
 #Preview(as: .systemSmall) {
-    HealthWidget()
+    StepsWidget()
 } timeline: {
     StepsEntry(date: .now)
 }
