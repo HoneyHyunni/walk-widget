@@ -8,15 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		085326072AF0BA1E00BCBFBA /* WalkWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085326062AF0BA1E00BCBFBA /* WalkWidgetApp.swift */; };
-		085326092AF0BA1E00BCBFBA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085326082AF0BA1E00BCBFBA /* ContentView.swift */; };
+		085326092AF0BA1E00BCBFBA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085326082AF0BA1E00BCBFBA /* MainView.swift */; };
 		0853260B2AF0BA1F00BCBFBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0853260A2AF0BA1F00BCBFBA /* Assets.xcassets */; };
 		0853260E2AF0BA1F00BCBFBA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0853260D2AF0BA1F00BCBFBA /* Preview Assets.xcassets */; };
 		085326182AF0BA1F00BCBFBA /* WalkWidgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085326172AF0BA1F00BCBFBA /* WalkWidgetTests.swift */; };
 		085326222AF0BA1F00BCBFBA /* WalkWidgetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085326212AF0BA1F00BCBFBA /* WalkWidgetUITests.swift */; };
 		085326242AF0BA1F00BCBFBA /* WalkWidgetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085326232AF0BA1F00BCBFBA /* WalkWidgetUITestsLaunchTests.swift */; };
+		08793CA62B01E6E000E5B5E6 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08793CA52B01E6E000E5B5E6 /* ViewModel.swift */; };
+		08793CA72B01E6E000E5B5E6 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08793CA52B01E6E000E5B5E6 /* ViewModel.swift */; };
+		08793CA92B01EC3700E5B5E6 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08793CA82B01EC3700E5B5E6 /* DateExtension.swift */; };
+		08793CAA2B01EC3700E5B5E6 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08793CA82B01EC3700E5B5E6 /* DateExtension.swift */; };
 		08CDCD972AFB225700C5B5FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDCD962AFB225700C5B5FF /* SceneDelegate.swift */; };
 		08CDCD9D2AFB3EE700C5B5FF /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDCD9C2AFB3EE700C5B5FF /* AppConstants.swift */; };
 		08CDCDA02AFB40F500C5B5FF /* UserDefaultsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDCD9F2AFB40F500C5B5FF /* UserDefaultsWrapper.swift */; };
+		08CDCDA82AFBB51400C5B5FF /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CDCDA72AFBB51400C5B5FF /* WidgetKit.framework */; };
+		08CDCDAA2AFBB51400C5B5FF /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CDCDA92AFBB51400C5B5FF /* SwiftUI.framework */; };
+		08CDCDAD2AFBB51400C5B5FF /* HealthWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDCDAC2AFBB51400C5B5FF /* HealthWidgetBundle.swift */; };
+		08CDCDAF2AFBB51400C5B5FF /* StepsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDCDAE2AFBB51400C5B5FF /* StepsWidget.swift */; };
+		08CDCDB12AFBB51500C5B5FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08CDCDB02AFBB51500C5B5FF /* Assets.xcassets */; };
+		08CDCDB52AFBB51500C5B5FF /* HealthWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 08CDCDA52AFBB51400C5B5FF /* HealthWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		08CDCDBB2AFBB5CE00C5B5FF /* UserDefaultsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDCD9F2AFB40F500C5B5FF /* UserDefaultsWrapper.swift */; };
+		08CDCDBC2AFBB5E300C5B5FF /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDCD9C2AFB3EE700C5B5FF /* AppConstants.swift */; };
+		08CDCDBF2AFCE15E00C5B5FF /* StepsEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDCDBE2AFCE15E00C5B5FF /* StepsEntry.swift */; };
+		08CDCDC22AFCE1A000C5B5FF /* StepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDCDC12AFCE1A000C5B5FF /* StepsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +48,33 @@
 			remoteGlobalIDString = 085326022AF0BA1E00BCBFBA;
 			remoteInfo = WalkWidget;
 		};
+		08CDCDB32AFBB51500C5B5FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 085325FB2AF0BA1E00BCBFBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08CDCDA42AFBB51400C5B5FF;
+			remoteInfo = HealthWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		08CDCDB62AFBB51500C5B5FF /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				08CDCDB52AFBB51500C5B5FF /* HealthWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		085326032AF0BA1E00BCBFBA /* WalkWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalkWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		085326062AF0BA1E00BCBFBA /* WalkWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkWidgetApp.swift; sourceTree = "<group>"; };
-		085326082AF0BA1E00BCBFBA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		085326082AF0BA1E00BCBFBA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		0853260A2AF0BA1F00BCBFBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0853260D2AF0BA1F00BCBFBA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		085326132AF0BA1F00BCBFBA /* WalkWidgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalkWidgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,11 +82,23 @@
 		0853261D2AF0BA1F00BCBFBA /* WalkWidgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalkWidgetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		085326212AF0BA1F00BCBFBA /* WalkWidgetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkWidgetUITests.swift; sourceTree = "<group>"; };
 		085326232AF0BA1F00BCBFBA /* WalkWidgetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkWidgetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		08793CA52B01E6E000E5B5E6 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		08793CA82B01EC3700E5B5E6 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		08CDCD962AFB225700C5B5FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		08CDCD982AFB248600C5B5FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		08CDCD992AFB3CB000C5B5FF /* WalkWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WalkWidget.entitlements; sourceTree = "<group>"; };
 		08CDCD9C2AFB3EE700C5B5FF /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		08CDCD9F2AFB40F500C5B5FF /* UserDefaultsWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsWrapper.swift; sourceTree = "<group>"; };
+		08CDCDA52AFBB51400C5B5FF /* HealthWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HealthWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		08CDCDA72AFBB51400C5B5FF /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		08CDCDA92AFBB51400C5B5FF /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		08CDCDAC2AFBB51400C5B5FF /* HealthWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthWidgetBundle.swift; sourceTree = "<group>"; };
+		08CDCDAE2AFBB51400C5B5FF /* StepsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsWidget.swift; sourceTree = "<group>"; };
+		08CDCDB02AFBB51500C5B5FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08CDCDB22AFBB51500C5B5FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08CDCDBA2AFBB53400C5B5FF /* HealthWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HealthWidgetExtension.entitlements; sourceTree = "<group>"; };
+		08CDCDBE2AFCE15E00C5B5FF /* StepsEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsEntry.swift; sourceTree = "<group>"; };
+		08CDCDC12AFCE1A000C5B5FF /* StepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +123,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		08CDCDA22AFBB51400C5B5FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08CDCDAA2AFBB51400C5B5FF /* SwiftUI.framework in Frameworks */,
+				08CDCDA82AFBB51400C5B5FF /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -85,6 +141,9 @@
 				085326052AF0BA1E00BCBFBA /* WalkWidget */,
 				085326162AF0BA1F00BCBFBA /* WalkWidgetTests */,
 				085326202AF0BA1F00BCBFBA /* WalkWidgetUITests */,
+				08CDCDAB2AFBB51400C5B5FF /* HealthWidget */,
+				08CDCDA62AFBB51400C5B5FF /* Frameworks */,
+				08CDCDBA2AFBB53400C5B5FF /* HealthWidgetExtension.entitlements */,
 				085326042AF0BA1E00BCBFBA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,6 +154,7 @@
 				085326032AF0BA1E00BCBFBA /* WalkWidget.app */,
 				085326132AF0BA1F00BCBFBA /* WalkWidgetTests.xctest */,
 				0853261D2AF0BA1F00BCBFBA /* WalkWidgetUITests.xctest */,
+				08CDCDA52AFBB51400C5B5FF /* HealthWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,11 +162,12 @@
 		085326052AF0BA1E00BCBFBA /* WalkWidget */ = {
 			isa = PBXGroup;
 			children = (
+				08CDCDC42AFCE37900C5B5FF /* Wrappers */,
+				08CDCDC32AFCE36400C5B5FF /* Common */,
 				085326062AF0BA1E00BCBFBA /* WalkWidgetApp.swift */,
 				08CDCD962AFB225700C5B5FF /* SceneDelegate.swift */,
-				085326082AF0BA1E00BCBFBA /* ContentView.swift */,
-				08CDCD9C2AFB3EE700C5B5FF /* AppConstants.swift */,
-				08CDCD9F2AFB40F500C5B5FF /* UserDefaultsWrapper.swift */,
+				085326082AF0BA1E00BCBFBA /* MainView.swift */,
+				08793CA52B01E6E000E5B5E6 /* ViewModel.swift */,
 				0853260A2AF0BA1F00BCBFBA /* Assets.xcassets */,
 				08CDCD982AFB248600C5B5FF /* Info.plist */,
 				08CDCD992AFB3CB000C5B5FF /* WalkWidget.entitlements */,
@@ -140,6 +201,61 @@
 			path = WalkWidgetUITests;
 			sourceTree = "<group>";
 		};
+		08CDCDA62AFBB51400C5B5FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08CDCDA72AFBB51400C5B5FF /* WidgetKit.framework */,
+				08CDCDA92AFBB51400C5B5FF /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08CDCDAB2AFBB51400C5B5FF /* HealthWidget */ = {
+			isa = PBXGroup;
+			children = (
+				08CDCDC02AFCE18B00C5B5FF /* Views */,
+				08CDCDBD2AFCE13700C5B5FF /* Entries */,
+				08CDCDAC2AFBB51400C5B5FF /* HealthWidgetBundle.swift */,
+				08CDCDAE2AFBB51400C5B5FF /* StepsWidget.swift */,
+				08CDCDB02AFBB51500C5B5FF /* Assets.xcassets */,
+				08CDCDB22AFBB51500C5B5FF /* Info.plist */,
+			);
+			path = HealthWidget;
+			sourceTree = "<group>";
+		};
+		08CDCDBD2AFCE13700C5B5FF /* Entries */ = {
+			isa = PBXGroup;
+			children = (
+				08CDCDBE2AFCE15E00C5B5FF /* StepsEntry.swift */,
+			);
+			path = Entries;
+			sourceTree = "<group>";
+		};
+		08CDCDC02AFCE18B00C5B5FF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				08CDCDC12AFCE1A000C5B5FF /* StepsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		08CDCDC32AFCE36400C5B5FF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				08CDCD9C2AFB3EE700C5B5FF /* AppConstants.swift */,
+				08793CA82B01EC3700E5B5E6 /* DateExtension.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		08CDCDC42AFCE37900C5B5FF /* Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				08CDCD9F2AFB40F500C5B5FF /* UserDefaultsWrapper.swift */,
+			);
+			path = Wrappers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,10 +266,12 @@
 				085325FF2AF0BA1E00BCBFBA /* Sources */,
 				085326002AF0BA1E00BCBFBA /* Frameworks */,
 				085326012AF0BA1E00BCBFBA /* Resources */,
+				08CDCDB62AFBB51500C5B5FF /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				08CDCDB42AFBB51500C5B5FF /* PBXTargetDependency */,
 			);
 			name = WalkWidget;
 			productName = WalkWidget;
@@ -196,6 +314,23 @@
 			productReference = 0853261D2AF0BA1F00BCBFBA /* WalkWidgetUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		08CDCDA42AFBB51400C5B5FF /* HealthWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08CDCDB92AFBB51500C5B5FF /* Build configuration list for PBXNativeTarget "HealthWidgetExtension" */;
+			buildPhases = (
+				08CDCDA12AFBB51400C5B5FF /* Sources */,
+				08CDCDA22AFBB51400C5B5FF /* Frameworks */,
+				08CDCDA32AFBB51400C5B5FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HealthWidgetExtension;
+			productName = HealthWidgetExtension;
+			productReference = 08CDCDA52AFBB51400C5B5FF /* HealthWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -217,6 +352,9 @@
 						CreatedOnToolsVersion = 15.0.1;
 						TestTargetID = 085326022AF0BA1E00BCBFBA;
 					};
+					08CDCDA42AFBB51400C5B5FF = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
 				};
 			};
 			buildConfigurationList = 085325FE2AF0BA1E00BCBFBA /* Build configuration list for PBXProject "WalkWidget" */;
@@ -235,6 +373,7 @@
 				085326022AF0BA1E00BCBFBA /* WalkWidget */,
 				085326122AF0BA1F00BCBFBA /* WalkWidgetTests */,
 				0853261C2AF0BA1F00BCBFBA /* WalkWidgetUITests */,
+				08CDCDA42AFBB51400C5B5FF /* HealthWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -263,6 +402,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		08CDCDA32AFBB51400C5B5FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08CDCDB12AFBB51500C5B5FF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -271,9 +418,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				08CDCDA02AFB40F500C5B5FF /* UserDefaultsWrapper.swift in Sources */,
-				085326092AF0BA1E00BCBFBA /* ContentView.swift in Sources */,
+				08793CA92B01EC3700E5B5E6 /* DateExtension.swift in Sources */,
+				085326092AF0BA1E00BCBFBA /* MainView.swift in Sources */,
 				085326072AF0BA1E00BCBFBA /* WalkWidgetApp.swift in Sources */,
 				08CDCD972AFB225700C5B5FF /* SceneDelegate.swift in Sources */,
+				08793CA62B01E6E000E5B5E6 /* ViewModel.swift in Sources */,
 				08CDCD9D2AFB3EE700C5B5FF /* AppConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +444,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		08CDCDA12AFBB51400C5B5FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08CDCDAD2AFBB51400C5B5FF /* HealthWidgetBundle.swift in Sources */,
+				08793CAA2B01EC3700E5B5E6 /* DateExtension.swift in Sources */,
+				08CDCDBB2AFBB5CE00C5B5FF /* UserDefaultsWrapper.swift in Sources */,
+				08CDCDC22AFCE1A000C5B5FF /* StepsView.swift in Sources */,
+				08CDCDAF2AFBB51400C5B5FF /* StepsWidget.swift in Sources */,
+				08CDCDBF2AFCE15E00C5B5FF /* StepsEntry.swift in Sources */,
+				08CDCDBC2AFBB5E300C5B5FF /* AppConstants.swift in Sources */,
+				08793CA72B01E6E000E5B5E6 /* ViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -307,6 +471,11 @@
 			isa = PBXTargetDependency;
 			target = 085326022AF0BA1E00BCBFBA /* WalkWidget */;
 			targetProxy = 0853261E2AF0BA1F00BCBFBA /* PBXContainerItemProxy */;
+		};
+		08CDCDB42AFBB51500C5B5FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08CDCDA42AFBB51400C5B5FF /* HealthWidgetExtension */;
+			targetProxy = 08CDCDB32AFBB51500C5B5FF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -433,6 +602,7 @@
 		085326282AF0BA1F00BCBFBA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = WalkWidget/WalkWidget.entitlements;
@@ -468,6 +638,7 @@
 		085326292AF0BA1F00BCBFBA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = WalkWidget/WalkWidget.entitlements;
@@ -576,6 +747,64 @@
 			};
 			name = Release;
 		};
+		08CDCDB72AFBB51500C5B5FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = HealthWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AX94CTZN8D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HealthWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HealthWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.sanghyun.practice.WalkWidget.HealthWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		08CDCDB82AFBB51500C5B5FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = HealthWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AX94CTZN8D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HealthWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HealthWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.sanghyun.practice.WalkWidget.HealthWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -611,6 +840,15 @@
 			buildConfigurations = (
 				0853262E2AF0BA1F00BCBFBA /* Debug */,
 				0853262F2AF0BA1F00BCBFBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08CDCDB92AFBB51500C5B5FF /* Build configuration list for PBXNativeTarget "HealthWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08CDCDB72AFBB51500C5B5FF /* Debug */,
+				08CDCDB82AFBB51500C5B5FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
