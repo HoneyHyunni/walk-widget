@@ -9,7 +9,7 @@ class AppConstants {
     
     static let USER_DEFAULTS_ID = "group.com.dev.sanghyun.practice.widget"
     
-    static let UD_KEY_BACKGROUND_COLOR = "BACKGROUND_COLOR"
+    static let UD_KEY_STEPS = "STEPS"
     
     // Widget
     static let WIDGET_ID_STEPS = "STEPS_WIDGET"

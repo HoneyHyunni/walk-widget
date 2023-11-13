@@ -8,19 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		085326072AF0BA1E00BCBFBA /* WalkWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085326062AF0BA1E00BCBFBA /* WalkWidgetApp.swift */; };
-		085326092AF0BA1E00BCBFBA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085326082AF0BA1E00BCBFBA /* ContentView.swift */; };
+		085326092AF0BA1E00BCBFBA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085326082AF0BA1E00BCBFBA /* MainView.swift */; };
 		0853260B2AF0BA1F00BCBFBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0853260A2AF0BA1F00BCBFBA /* Assets.xcassets */; };
 		0853260E2AF0BA1F00BCBFBA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0853260D2AF0BA1F00BCBFBA /* Preview Assets.xcassets */; };
 		085326182AF0BA1F00BCBFBA /* WalkWidgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085326172AF0BA1F00BCBFBA /* WalkWidgetTests.swift */; };
 		085326222AF0BA1F00BCBFBA /* WalkWidgetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085326212AF0BA1F00BCBFBA /* WalkWidgetUITests.swift */; };
 		085326242AF0BA1F00BCBFBA /* WalkWidgetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085326232AF0BA1F00BCBFBA /* WalkWidgetUITestsLaunchTests.swift */; };
+		08793CA62B01E6E000E5B5E6 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08793CA52B01E6E000E5B5E6 /* ViewModel.swift */; };
+		08793CA72B01E6E000E5B5E6 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08793CA52B01E6E000E5B5E6 /* ViewModel.swift */; };
+		08793CA92B01EC3700E5B5E6 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08793CA82B01EC3700E5B5E6 /* DateExtension.swift */; };
+		08793CAA2B01EC3700E5B5E6 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08793CA82B01EC3700E5B5E6 /* DateExtension.swift */; };
 		08CDCD972AFB225700C5B5FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDCD962AFB225700C5B5FF /* SceneDelegate.swift */; };
 		08CDCD9D2AFB3EE700C5B5FF /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDCD9C2AFB3EE700C5B5FF /* AppConstants.swift */; };
 		08CDCDA02AFB40F500C5B5FF /* UserDefaultsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDCD9F2AFB40F500C5B5FF /* UserDefaultsWrapper.swift */; };
 		08CDCDA82AFBB51400C5B5FF /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CDCDA72AFBB51400C5B5FF /* WidgetKit.framework */; };
 		08CDCDAA2AFBB51400C5B5FF /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CDCDA92AFBB51400C5B5FF /* SwiftUI.framework */; };
 		08CDCDAD2AFBB51400C5B5FF /* HealthWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDCDAC2AFBB51400C5B5FF /* HealthWidgetBundle.swift */; };
-		08CDCDAF2AFBB51400C5B5FF /* HealthWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDCDAE2AFBB51400C5B5FF /* HealthWidget.swift */; };
+		08CDCDAF2AFBB51400C5B5FF /* StepsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDCDAE2AFBB51400C5B5FF /* StepsWidget.swift */; };
 		08CDCDB12AFBB51500C5B5FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08CDCDB02AFBB51500C5B5FF /* Assets.xcassets */; };
 		08CDCDB52AFBB51500C5B5FF /* HealthWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 08CDCDA52AFBB51400C5B5FF /* HealthWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		08CDCDBB2AFBB5CE00C5B5FF /* UserDefaultsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDCD9F2AFB40F500C5B5FF /* UserDefaultsWrapper.swift */; };
@@ -70,7 +74,7 @@
 /* Begin PBXFileReference section */
 		085326032AF0BA1E00BCBFBA /* WalkWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalkWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		085326062AF0BA1E00BCBFBA /* WalkWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkWidgetApp.swift; sourceTree = "<group>"; };
-		085326082AF0BA1E00BCBFBA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		085326082AF0BA1E00BCBFBA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		0853260A2AF0BA1F00BCBFBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0853260D2AF0BA1F00BCBFBA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		085326132AF0BA1F00BCBFBA /* WalkWidgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalkWidgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +82,8 @@
 		0853261D2AF0BA1F00BCBFBA /* WalkWidgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalkWidgetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		085326212AF0BA1F00BCBFBA /* WalkWidgetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkWidgetUITests.swift; sourceTree = "<group>"; };
 		085326232AF0BA1F00BCBFBA /* WalkWidgetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkWidgetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		08793CA52B01E6E000E5B5E6 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		08793CA82B01EC3700E5B5E6 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		08CDCD962AFB225700C5B5FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		08CDCD982AFB248600C5B5FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		08CDCD992AFB3CB000C5B5FF /* WalkWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WalkWidget.entitlements; sourceTree = "<group>"; };
@@ -87,7 +93,7 @@
 		08CDCDA72AFBB51400C5B5FF /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		08CDCDA92AFBB51400C5B5FF /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		08CDCDAC2AFBB51400C5B5FF /* HealthWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthWidgetBundle.swift; sourceTree = "<group>"; };
-		08CDCDAE2AFBB51400C5B5FF /* HealthWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthWidget.swift; sourceTree = "<group>"; };
+		08CDCDAE2AFBB51400C5B5FF /* StepsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsWidget.swift; sourceTree = "<group>"; };
 		08CDCDB02AFBB51500C5B5FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08CDCDB22AFBB51500C5B5FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08CDCDBA2AFBB53400C5B5FF /* HealthWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HealthWidgetExtension.entitlements; sourceTree = "<group>"; };
@@ -160,7 +166,8 @@
 				08CDCDC32AFCE36400C5B5FF /* Common */,
 				085326062AF0BA1E00BCBFBA /* WalkWidgetApp.swift */,
 				08CDCD962AFB225700C5B5FF /* SceneDelegate.swift */,
-				085326082AF0BA1E00BCBFBA /* ContentView.swift */,
+				085326082AF0BA1E00BCBFBA /* MainView.swift */,
+				08793CA52B01E6E000E5B5E6 /* ViewModel.swift */,
 				0853260A2AF0BA1F00BCBFBA /* Assets.xcassets */,
 				08CDCD982AFB248600C5B5FF /* Info.plist */,
 				08CDCD992AFB3CB000C5B5FF /* WalkWidget.entitlements */,
@@ -209,7 +216,7 @@
 				08CDCDC02AFCE18B00C5B5FF /* Views */,
 				08CDCDBD2AFCE13700C5B5FF /* Entries */,
 				08CDCDAC2AFBB51400C5B5FF /* HealthWidgetBundle.swift */,
-				08CDCDAE2AFBB51400C5B5FF /* HealthWidget.swift */,
+				08CDCDAE2AFBB51400C5B5FF /* StepsWidget.swift */,
 				08CDCDB02AFBB51500C5B5FF /* Assets.xcassets */,
 				08CDCDB22AFBB51500C5B5FF /* Info.plist */,
 			);
@@ -236,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				08CDCD9C2AFB3EE700C5B5FF /* AppConstants.swift */,
+				08793CA82B01EC3700E5B5E6 /* DateExtension.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -410,9 +418,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				08CDCDA02AFB40F500C5B5FF /* UserDefaultsWrapper.swift in Sources */,
-				085326092AF0BA1E00BCBFBA /* ContentView.swift in Sources */,
+				08793CA92B01EC3700E5B5E6 /* DateExtension.swift in Sources */,
+				085326092AF0BA1E00BCBFBA /* MainView.swift in Sources */,
 				085326072AF0BA1E00BCBFBA /* WalkWidgetApp.swift in Sources */,
 				08CDCD972AFB225700C5B5FF /* SceneDelegate.swift in Sources */,
+				08793CA62B01E6E000E5B5E6 /* ViewModel.swift in Sources */,
 				08CDCD9D2AFB3EE700C5B5FF /* AppConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,11 +449,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				08CDCDAD2AFBB51400C5B5FF /* HealthWidgetBundle.swift in Sources */,
+				08793CAA2B01EC3700E5B5E6 /* DateExtension.swift in Sources */,
 				08CDCDBB2AFBB5CE00C5B5FF /* UserDefaultsWrapper.swift in Sources */,
 				08CDCDC22AFCE1A000C5B5FF /* StepsView.swift in Sources */,
-				08CDCDAF2AFBB51400C5B5FF /* HealthWidget.swift in Sources */,
+				08CDCDAF2AFBB51400C5B5FF /* StepsWidget.swift in Sources */,
 				08CDCDBF2AFCE15E00C5B5FF /* StepsEntry.swift in Sources */,
 				08CDCDBC2AFBB5E300C5B5FF /* AppConstants.swift in Sources */,
+				08793CA72B01E6E000E5B5E6 /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
